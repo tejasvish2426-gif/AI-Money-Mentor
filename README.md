@@ -15,9 +15,9 @@ Built for the ET Gen AI Hackathon, AI Money Mentor is an autonomous financial ad
 * **Orchestration:** Multi-agent prompting logic
 
 ## 📦 Setup & Installation
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/AI-Money-Mentor.git`
+1. Clone the repo: `git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git`
 2. Install dependencies: `pip install streamlit google-generativeai`
-3. Set your API Key: Create a `.env` file with `GEMINI_API_KEY=your_key_here`
+3. Set your API Key: Create a `.env` file with `GEMINI_API_KEY=AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo`
 4. Run the app: `streamlit run app.py`
 
 ## 📊 Business Impact (Quantified)
