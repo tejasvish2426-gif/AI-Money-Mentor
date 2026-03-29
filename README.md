@@ -90,13 +90,57 @@ Frontend: Streamlit (Reactive Web Interface)
 
 Math Engine: Python (NumPy/Pandas for precise financial modeling)
 
-Installation
 
-Clone: git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git
+🛠️ Installation
+Follow these steps to deploy AI Money Mentor locally for testing and evaluation.
 
-Install: pip install -r requirements.txt
+1. Prerequisites
+Ensure you have the following installed on your system:
 
-Run: streamlit run app.py
+Python 3.9+
+
+pip (Python Package Manager)
+
+A valid Google Gemini API Key AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo
+
+2. Clone the Repository
+Open your terminal or command prompt and run:
+
+Bash
+git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git
+cd AI-Money-Mentor
+3. Install Dependencies
+Install the required libraries using the provided requirements file:
+
+Bash
+pip install -r requirements.txt
+4. Configure Environment Variables
+To keep your API key secure, create a .env file in the root directory:
+
+Windows (PowerShell): New-Item .env
+
+Mac/Linux: touch .env
+
+Open the .env file and add your key:
+
+Plaintext
+GEMINI_API_KEY=AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo
+
+5. Launch the Application
+Start the Streamlit server to view the dashboard:
+
+Bash
+streamlit run app.py
+The app will automatically open in your default browser at http://localhost:8501.
+
+🧪 Testing the Prototype
+To verify the Agentic Logic, try these three "Golden Path" tests:
+
+Tax Wizard: Paste a sample salary structure (e.g., Basic 50k, HRA 20k, 80C 1.5L) and check the Old vs. New regime comparison.
+
+Health Score: Input 0 for "Emergency Fund" and see if the AI identifies this as a critical risk.
+
+FIRE Planner: Set a retirement age of 45 and observe the aggressive SIP calculation and Equity-heavy asset allocation.
 
 📊 Business & Social Impact
 
