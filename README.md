@@ -135,6 +135,7 @@ streamlit run app.py
 The app will automatically open in your default browser at http://localhost:8501.
 
 🧪 Testing the Prototype
+
 To verify the Agentic Logic, try these three "Golden Path" tests:
 
 Tax Wizard: Paste a sample salary structure (e.g., Basic 50k, HRA 20k, 80C 1.5L) and check the Old vs. New regime comparison.
