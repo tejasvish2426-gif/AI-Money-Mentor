@@ -35,6 +35,7 @@ graph TD
 ```
 
 🚀 Core Features & Agent Roles
+
 1. Money Health Score
 A 5-minute diagnostic onboarding flow that generates a comprehensive financial wellness score across 6 critical dimensions:
 
@@ -82,6 +83,7 @@ Rebalancing Plan: AI-generated shifts to return to the target risk profile.
 Handles specific, high-stakes decisions triggered by life events—bonus, inheritance, marriage, or a new baby. The advisor provides customized pivots based on the user's current tax bracket and portfolio.
 
 🛠️ Technical Stack & Setup
+
 LLM: Google Gemini 1.5 Flash (Reasoning & Orchestration)
 
 Frontend: Streamlit (Reactive Web Interface)
@@ -96,6 +98,7 @@ Install: pip install -r requirements.txt
 Run: streamlit run app.py
 
 📊 Business & Social Impact
+
 Wealth Recovery: Identifies an average of ₹15,000 in "leaked" tax savings per user annually.
 
 Cost Democratization: Reduces a 2-week human planning process costing ₹25,000 to a 5-minute AI-driven session for near-zero cost.
