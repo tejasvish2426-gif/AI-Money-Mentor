@@ -24,3 +24,12 @@ Built for the ET Gen AI Hackathon, AI Money Mentor is an autonomous financial ad
 * **Cost Reduction:** Reduces financial planning costs from ₹25,000/year to <₹500.
 * **Time Saved:** Onboarding and plan generation reduced from 2 weeks to 5 minutes.
 * **Wealth Recovery:** Identifies an average of ₹15,000 in "leaked" tax savings per user.# AI-Money-Mentor
+graph TD
+    A[User Input: Financial Data] --> B{Orchestrator Agent}
+    B --> C[Tax Wizard Agent]
+    B --> D[Health Score Agent]
+    C --> E[Old vs New Regime Logic]
+    D --> F[6-Dimension Scoring]
+    E --> G[Final Money Roadmap]
+    F --> G
+    G --> H[Actionable Investment Tips]
