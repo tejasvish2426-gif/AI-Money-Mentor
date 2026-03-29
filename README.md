@@ -90,7 +90,6 @@ Frontend: Streamlit (Reactive Web Interface)
 
 Math Engine: Python (NumPy/Pandas for precise financial modeling)
 
-
 🛠️ Installation
 
 Follow these steps to deploy AI Money Mentor locally for testing and evaluation.
