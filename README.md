@@ -91,6 +91,7 @@ Frontend: Streamlit (Reactive Web Interface)
 Math Engine: Python (NumPy/Pandas for precise financial modeling)
 
 Installation
+
 Clone: git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git
 
 Install: pip install -r requirements.txt
