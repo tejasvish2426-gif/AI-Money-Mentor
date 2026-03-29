@@ -92,6 +92,7 @@ Math Engine: Python (NumPy/Pandas for precise financial modeling)
 
 
 🛠️ Installation
+
 Follow these steps to deploy AI Money Mentor locally for testing and evaluation.
 
 1. Prerequisites
