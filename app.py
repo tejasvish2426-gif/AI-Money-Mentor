@@ -5,7 +5,7 @@ import google.generativeai as genai
 MY_API_KEY = "AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo"
 
 genai.configure(api_key="AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo")
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro')
 
 # --- UI SETUP ---
 st.set_page_config(page_title="AI Money Mentor", layout="wide")
