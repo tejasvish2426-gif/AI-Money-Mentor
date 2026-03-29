@@ -32,7 +32,7 @@ graph TD
     %% Output
     MathEngine --> Output[Personalized Actionable Roadmap]
     Output --> User
-
+```
 
 🚀 Core Features & Agent Roles
 1. Money Health Score
@@ -99,3 +99,5 @@ Run: streamlit run app.py
 Wealth Recovery: Identifies an average of ₹15,000 in "leaked" tax savings per user annually.
 
 Cost Democratization: Reduces a 2-week human planning process costing ₹25,000 to a 5-minute AI-driven session for near-zero cost.
+
+
