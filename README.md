@@ -67,6 +67,6 @@ Clone the repo: git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.g
 
 Install dependencies: pip install streamlit google-generativeai
 
-Set your API Key: Create a .env file with GEMINI_API_KEY=your_key_here
+Set your API Key: Create a .env file with GEMINI_API_KEY=AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo
 
 Run the app: streamlit run app.py
