@@ -1,72 +1,101 @@
 # 💰 AI Money Mentor
-**From Confused Savers to Confident Investors**
+### *Autonomous Financial Orchestration for 1.4 Billion Indians*
 
-Built for the ET Gen AI Hackathon, AI Money Mentor is an autonomous financial advisor designed to make professional-grade financial planning accessible to 95% of Indians who currently lack a roadmap.
+**AI Money Mentor** is an agentic financial ecosystem designed to bridge the "Advice Gap." While professional financial planning in India is often inaccessible due to high costs, our platform leverages **Gemini 1.5 Flash** to provide institutional-grade tax optimization, retirement modeling, and portfolio diagnostics—instantly and autonomously.
 
-## 🚀 Features
-* **Money Health Score:** A 5-minute diagnostic across 6 wellness dimensions.
-* **Tax Wizard:** Side-by-side comparison of Old vs. New Tax Regimes with personalized optimization.
-* **FIRE Path Planner:** Automated month-by-month SIP and asset allocation roadmap.
+---
 
-## 🛠️ Tech Stack
-* **LLM:** Google Gemini 1.5 Flash
-* **Framework:** Streamlit (Frontend & Backend)
-* **Language:** Python 3.9+
-* **Orchestration:** Multi-agent prompting logic
+## 🏗️ Technical Architecture: The Agentic Core
 
-## 📦 Setup & Installation
-1. Clone the repo: `git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git`
-2. Install dependencies: `pip install streamlit google-generativeai`
-3. Set your API Key: Create a `.env` file with `GEMINI_API_KEY=AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo`
-4. Run the app: `streamlit run app.py`
+The system operates on a **Request-Router-Specialist** pattern. A central **Orchestrator** parses user intent and delegates data to six specialized sub-agents.
 
-## 📊 Business Impact (Quantified)
-* **Cost Reduction:** Reduces financial planning costs from ₹25,000/year to <₹500.
-* **Time Saved:** Onboarding and plan generation reduced from 2 weeks to 5 minutes.
-* **Wealth Recovery:** Identifies an average of ₹15,000 in "leaked" tax savings per user.# AI-Money-Mentor
-  ```mermaid
-  graph TD
-    A[User Input: Financial Data] --> B{Orchestrator Agent}
-    B --> C[Tax Wizard Agent]
-    B --> D[Health Score Agent]
-    C --> E[Old vs New Regime Logic]
-    D --> F[6-Dimension Scoring]
-    E --> G[Final Money Roadmap]
-    F --> G
-    G --> H[Actionable Investment Tips]
-  ```
+```mermaid
+graph TD
+    %% User Layer
+    User((User)) -->|Input: Form 16 / CAMS / Goals| Streamlit[Streamlit UI Engine]
 
-  1. Agent Roles & Communication
-The Orchestrator: Acts as the primary "Money Mentor" interface. It parses raw user text (like a Form 16 or income statement) and routes specific tasks to specialized sub-agents.
+    %% Orchestration Layer
+    Streamlit --> Orchestrator{Agent Orchestrator}
 
-The Tax Wizard: A specialist agent that compares the Old vs. New Tax Regimes using current Indian tax slabs. It identifies "leaked" savings from missed 80C, 80D, or HRA deductions.
+    %% Specialist Agents
+    Orchestrator --> Agent1[<b>FIRE Path Planner</b><br/>SIP & Asset Allocation]
+    Orchestrator --> Agent2[<b>Money Health Scorer</b><br/>6-Dimension Wellness Audit]
+    Orchestrator --> Agent3[<b>Life Event Advisor</b><br/>Tax-Aware Pivot Logic]
+    Orchestrator --> Agent4[<b>Tax Wizard</b><br/>Regime Optimization & 80C/D]
+    Orchestrator --> Agent5[<b>Couple's Planner</b><br/>Joint Net Worth & HRA Splits]
+    Orchestrator --> Agent6[<b>Portfolio X-Ray</b><br/>XIRR & Overlap Analysis]
 
-The Health Scorer: Evaluates financial wellness across 6 dimensions (Emergency Fund, Insurance, Debt, Health, Tax Efficiency, and Retirement) to provide a holistic "Money Health Score."
+    %% Data & Logic Processing
+    Agent1 & Agent2 & Agent3 & Agent4 & Agent5 & Agent6 --> Gemini[Gemini 1.5 Flash Reasoning]
+    Gemini --> MathEngine[Python Financial Math Engine<br/>XIRR / SIP / Tax Slabs]
 
-2. Tool Integrations
-Gemini 1.5 Flash: Used for natural language understanding and complex financial reasoning.
+    %% Output
+    MathEngine --> Output[Personalized Actionable Roadmap]
+    Output --> User
 
-Streamlit: Provides the real-time interactive dashboard for the user.
 
-Python Math Engine: Handles the precise SIP and XIRR calculations to ensure zero-margin error.
+🚀 Core Features & Agent Roles
+1. Money Health Score
+A 5-minute diagnostic onboarding flow that generates a comprehensive financial wellness score across 6 critical dimensions:
 
-3. Error-Handling Logic
-Validation Loop: If a user inputs impossible values (e.g., expenses higher than income), the Orchestrator triggers a "Correction Prompt" rather than processing inaccurate data.
+Emergency Preparedness: Liquid fund adequacy vs. monthly burn.
 
-Fallback Mechanism: In case of ambiguous tax data, the system defaults to the most conservative estimate to ensure the user doesn't underpay their taxes.
+Insurance Coverage: Gap analysis in Term and Health cover.
 
-📊 Business Impact (Quantified)
-Cost Reduction: Reduces financial planning costs from ₹25,000/year to near-zero.
+Investment Diversification: Asset allocation health.
 
-Time Saved: Onboarding and plan generation reduced from 2 weeks (human meetings) to 5 minutes.
+Debt Health: Debt-to-income ratio optimization.
 
+Tax Efficiency: Leakage detection in current filings.
+
+Retirement Readiness: Projected corpus vs. lifestyle inflation.
+
+2. Tax Wizard (Regime Optimizer)
+Upload a Form 16 or input a salary structure. The agent identifies every missed deduction (80C, 80D, HRA, NPS), models the Old vs. New Tax Regime with precision, and suggests tax-saving investments ranked by risk profile and liquidity needs.
+
+3. FIRE Path Planner
+User inputs age, income, expenses, and life goals. The AI builds a complete, month-by-month financial roadmap including:
+
+Systematic Investment Plan (SIP) amounts tailored to specific goals.
+
+Asset Allocation Shifts: Automated "Glide Paths" moving from Equity to Debt as retirement nears.
+
+4. Couple’s Money Planner
+India's first AI-powered joint planning tool. Both partners input data, and the AI optimizes across both incomes for:
+
+HRA Claims & NPS Matching: Strategic splitting for maximum tax efficiency.
+
+Joint vs. Individual Insurance: Cost-benefit analysis of combined policies.
+
+Combined Net Worth Tracking: A unified view of household wealth.
+
+5. Mutual Fund (MF) Portfolio X-Ray
+Upload CAMS or KFintech statements for a sub-10 second deep dive:
+
+True XIRR: Accurate internal rate of return calculations.
+
+Overlap Analysis: Detecting redundant fund holdings to reduce risk.
+
+Rebalancing Plan: AI-generated shifts to return to the target risk profile.
+
+6. Life Event Financial Advisor
+Handles specific, high-stakes decisions triggered by life events—bonus, inheritance, marriage, or a new baby. The advisor provides customized pivots based on the user's current tax bracket and portfolio.
+
+🛠️ Technical Stack & Setup
+LLM: Google Gemini 1.5 Flash (Reasoning & Orchestration)
+
+Frontend: Streamlit (Reactive Web Interface)
+
+Math Engine: Python (NumPy/Pandas for precise financial modeling)
+
+Installation
+Clone: git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git
+
+Install: pip install -r requirements.txt
+
+Run: streamlit run app.py
+
+📊 Business & Social Impact
 Wealth Recovery: Identifies an average of ₹15,000 in "leaked" tax savings per user annually.
 
-🛠️ Setup & Installation
-Clone the repo: git clone https://github.com/tejasvish2426-gif/AI-Money-Mentor.git
-
-Install dependencies: pip install streamlit google-generativeai
-
-Set your API Key: Create a .env file with GEMINI_API_KEY=AIzaSyCXdEQd86Dd-qMYdLdqRAPCZNFXtZEVQlo
-
-Run the app: streamlit run app.py
+Cost Democratization: Reduces a 2-week human planning process costing ₹25,000 to a 5-minute AI-driven session for near-zero cost.
